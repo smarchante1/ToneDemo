@@ -49,10 +49,12 @@ nav {
 }
 
 .main-container {
-  border: solid 1px #000000;
+  /* border: solid 1px #000000; */
   float: right;
-  height: 80vh;
+  height: 200vh;
   min-width: 880px;
+  padding-right: 100px;
+  padding-bottom: 50px;
 }
 
 #touch {position: absolute; opacity: 0; height: 0px;}    
@@ -67,4 +69,5 @@ li a {text-decoration : none; color : #2d2f31;}
 .code-content{
   padding-left: 20px;
   padding-right: 100px;
+  font-size: 15px;
 }
