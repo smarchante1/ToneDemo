@@ -1,7 +1,6 @@
 nav {
   width : 250px; 
   background: #e3dffc;
-  float: left;
 }
 
 #menu-span {
@@ -50,9 +49,11 @@ nav {
 
 .main-container {
   /* border: solid 1px #000000; */
-  float: right;
-  height: 200vh;
-  min-width: 880px;
+  /* float: right; */
+  display: flex;
+  flex-direction: column;
+  height: 180vh;
+  /* min-width: 880px; */
   padding-right: 100px;
   padding-bottom: 50px;
 }

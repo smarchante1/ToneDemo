@@ -7,7 +7,8 @@ const BasicTones = () => {
     
     const firstNote =  <CopyBlock
         text=
-        {`   import * as Tone from 'tone'
+        {`   
+    import * as Tone from 'tone'
         
         // create a variable for a new synth instrument
         const synth = new Tone.Synth().toDestination();
@@ -23,7 +24,8 @@ const BasicTones = () => {
 
     const synthTypes = <CopyBlock
         text=
-        {`   import * as Tone from 'tone'
+        {`   
+    import * as Tone from 'tone'
         
         // FM Synth
         const fmSynth = new Tone.FMSynth().toDestination();
@@ -37,17 +39,18 @@ const BasicTones = () => {
         theme={shadesOfPurple}
          />; 
 
-    const polyPhonicCode = <CopyBlock
+    const samplerCode = <CopyBlock
         text=
-        {`   import * as Tone from 'tone'
+        {`   
+    import * as Tone from 'tone'
         
-        // Create a new polyphonic synthesizer
-        const polyphonSynth = new Tone.PolySynth(Tone.Synth).toDestination();
+        const player = 
+        new Tone.Player("https://tonejs.github.io/audio/berklee/drum_low_1.mp3").toDestination();
 
-        // Set a time context equal to the current time
-        const now = Tone.now()
-
-        polyphonSynth.triggerRelease(["D4", "F4", "A4", "C5", "E5"], now + 4);
+        function playSample() {
+            Tone.loaded().then(() => {
+            player.start();
+        });
         `
         }
         language={'jsx'}
@@ -55,12 +58,10 @@ const BasicTones = () => {
         theme={shadesOfPurple}
          />; 
  
- 
+
     const synth = new Tone.Synth().toDestination();
     const fmSynth = new Tone.FMSynth().toDestination();
     const amSynth = new Tone.AMSynth().toDestination();
-    const polyphonSynth = new Tone.PolySynth(Tone.Synth).toDestination();
-    const now = Tone.now()
 
     function playNote(note) {
         synth.triggerAttackRelease(`${note}4`, "8n");
@@ -74,17 +75,13 @@ const BasicTones = () => {
         amSynth.triggerAttackRelease(`${note}4`, "8n");
     }
 
-    function playMultipleNotes() {
-        synth.triggerAttack("D4", now);
-        synth.triggerAttack("F4", now + 0.5);
-        synth.triggerAttack("G4", now + 1);
-        synth.triggerAttack("A4", now + 1.5);
-        synth.triggerAttack("C5", now + 2);
-        polyphonSynth.triggerRelease(["D4", "F4", "A4", "C5", "E5"], now + 4);
-    }
+    const player = new Tone.Player("https://tonejs.github.io/audio/berklee/drum_low_1.mp3").toDestination();
 
-    function pauseMultipleNotes() {
-        
+    function playSample() {
+        Tone.loaded().then(() => {
+        player.start();
+        console.log('I WAS CLICKED')
+    });
     }
 
     return(
@@ -145,7 +142,7 @@ const BasicTones = () => {
             </div>
 
             <div className="content-container">
-                <p>So far we've been listening to single notes. But we won't win any grammy's that way.</p>            
+                <p>So far we've been listening to synth notes. But we won't win any grammy's that way. What other instruments can we have?</p>            
             </div>
 
             <br />
@@ -154,20 +151,21 @@ const BasicTones = () => {
             <br />
 
             <div className="content-container">
-                <h3>C. Polyphonic Synthesizer</h3>
+                <h3>C. Sampler</h3>
                 <ul>
-                    <li>How can we use built in js data structures like arrays to hold multiple notes?</li>
+                    <li>How can we use external sound files to create button samplers?</li>
+                    <li>What does Tone.loaded().then() do?</li>
                 </ul>
             </div>          
             <div>
-                <p className="code-content">{polyPhonicCode}</p>
+                <p className="code-content">{samplerCode}</p>
             </div>
             <div className="content-container">
-               <p>Awesome, let's play some more notes now.</p>
+               <p>Awesome, let's listen to a drum sample.</p>
 
                 <br />
 
-                <button className="play-button" onClick={playMultipleNotes}><span>Play Multiple Notes</span></button>
+                <button className="play-button" onClick={() => playSample()}><span>Play Drum Kick </span></button>
 
                 <br />
                 <br />

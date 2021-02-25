@@ -4,16 +4,45 @@
   /* display: flex; */
   /* align-items: center;
   justify-content: center; */
+  padding-left: 40%;
 }
 .note {
   height: 80px;
   width: 40px;
-  background: white;
-  border: 2px solid #ccc;
+  background: #e3dffc;
+  border: 2px solid #000000;
   border-radius: 2px;
   margin: 2px;
   cursor: pointer;
+  transition: all .35s;
 }
 .note:active {
   background: grey;
 }
+
+.note span{
+  position: relative;
+  z-index: 2;
+}
+
+.note:hover{
+  color: white;
+  background-color: #583FFC ;
+}
+
+.note:hover:after{
+  width: 100%;
+}
+
+
+.generic-button {
+  padding: 10px;
+  margin-left: 45px;
+  max-width: 60px;
+  min-height: 53px;
+}
+
+.generic-button-container{
+  padding-left: 40%;
+}
+
