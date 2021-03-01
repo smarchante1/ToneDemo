@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css"
 import BasicKeys from './components/BasicKeys'
 import BasicTones from './components/Home'
+import CreateSong from './components/CreateSong'
 import {
   BrowserRouter as Router,
   Switch,
@@ -25,7 +26,7 @@ export default function App() {
                 <div className="menu-link"><Link to="/module2">Module 2: Mapping to Buttons</Link></div>
               </li>
               <li>
-                <div className="menu-link"><Link to="/module3">Module 3: Recording Melodies</Link></div>
+                <div className="menu-link"><Link to="/module3">Module 3: Creating Songs</Link></div>
               </li>
               <li>
                 <div className="menu-link"><Link to="/module4">Module 4: Percussion</Link></div>
@@ -45,6 +46,11 @@ export default function App() {
           <Route path="/module2">
             <div className="main-container">
               <BasicKeys />
+            </div>
+          </Route>
+          <Route path="/module3">
+            <div className="main-container">
+              <CreateSong />
             </div>
           </Route>
         </Switch>
