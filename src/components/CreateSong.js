@@ -86,13 +86,12 @@ const CreateSong = () => {
                             <li>Each instrument must be defined with track components</li>
                         </ul>
                     <p className="code-content">{song}</p>
-                </div>
 
-            <br />
-            <br />
-            <br />
-    
-                <button className="play-button" disabled={!disabled} onClick={playSong}>{play ? "Stop" : "Play"}</button>
+                <br />
+                <br />
+                <br />
+        
+                <button className="song-play" disabled={!disabled} onClick={playSong}>{play ? "Stop" : "Play"}</button>
                 <Song isPlaying={play} bpm={110}>
                     <Track
                         steps={['Eb4','G4','F4','Ab4']}
@@ -124,9 +123,9 @@ const CreateSong = () => {
                         ]}
                     >
                         <Instrument type="membraneSynth" />
-                    </Track>
-                
+                    </Track> 
                 </Song>
+                </div>
             </div>
         </div>
     )

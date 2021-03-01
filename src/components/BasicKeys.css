@@ -46,3 +46,18 @@
   padding-left: 40%;
 }
 
+.song-play {
+  width: 200px;
+  height: 40px;
+  background: #e3dffc;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  margin: 2px;
+  cursor: pointer;
+  transition: all .35s;
+}
+
+.song-play:hover{
+  color: white;
+  background-color: #583FFC ;
+}

@@ -116,8 +116,7 @@ const BasicTones = () => {
                 <h3>B. Tone.js Instruments</h3>
                 <ul>
                     <li>What types of synths are available to us?</li>
-                    <li>What is monophonic?</li>
-                    <li>What is polyphonic?</li>
+                    <li>How do we initialize synths?</li>
                 </ul>
             </div>          
             <div>

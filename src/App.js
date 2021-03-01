@@ -28,12 +28,6 @@ export default function App() {
               <li>
                 <div className="menu-link"><Link to="/module3">Module 3: Creating Songs</Link></div>
               </li>
-              <li>
-                <div className="menu-link"><Link to="/module4">Module 4: Percussion</Link></div>
-              </li>
-              <li>
-                <div className="menu-link"><Link to="/module5">Module 5</Link></div>
-              </li>
             </ul>
         </nav>
 
