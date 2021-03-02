@@ -1,8 +1,9 @@
 import React from "react";
-import "./App.css"
-import BasicKeys from './components/BasicKeys'
-import BasicTones from './components/Home'
-import CreateSong from './components/CreateSong'
+import "./App.css";
+import BasicKeys from './components/BasicKeys';
+import BasicTones from './components/Home';
+import CreateSong from './components/CreateSong';
+import Sandbox from './components/Sandbox';
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,6 +29,9 @@ export default function App() {
               <li>
                 <div className="menu-link"><Link to="/module3">Module 3: Creating Songs</Link></div>
               </li>
+              <li>
+                <div className="menu-link"><Link to="/sandbox">Code Sandbox</Link></div>
+              </li>
             </ul>
         </nav>
 
@@ -45,6 +49,11 @@ export default function App() {
           <Route path="/module3">
             <div className="main-container">
               <CreateSong />
+            </div>
+          </Route>
+          <Route path="/sandbox">
+            <div className="main-container">
+              <Sandbox />
             </div>
           </Route>
         </Switch>

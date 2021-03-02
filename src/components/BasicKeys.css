@@ -37,13 +37,17 @@
 
 .generic-button {
   padding: 10px;
-  margin-left: 45px;
+  margin-left: 65px;
   max-width: 60px;
   min-height: 53px;
 }
 
 .generic-button-container{
   padding-left: 40%;
+}
+
+.multiple-button-heading{
+  padding-left: 41%;
 }
 
 .song-play {
