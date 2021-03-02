@@ -6,7 +6,7 @@ import * as Tone from "tone";
 const Sandbox = () => {
 
     // We start by initializing an new Synth instrument
-
+    
     const synth = new Tone.Synth().toDestination();
 
     // Now we must create a function to trigger a note to sound
