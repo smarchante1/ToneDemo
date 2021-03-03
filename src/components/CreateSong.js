@@ -92,7 +92,7 @@ const CreateSong = () => {
                 <br />
         
                 <button className="song-play" disabled={!disabled} onClick={playSong}>{play ? "Stop" : "Play"}</button>
-                <Song isPlaying={play} bpm={110}>
+                <Song isPlaying={play} bpm={120}>
                     <Track
                         steps={['Eb4','G4','F4','Ab4']}
                         volume={-12}
@@ -100,6 +100,7 @@ const CreateSong = () => {
                         <Instrument type="duoSynth" />
                         <Effect type="reverb" />
                     </Track>
+
                     <Track
                         steps={[
                             null, ['A1'], null, ['A1']

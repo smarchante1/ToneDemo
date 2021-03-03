@@ -1,14 +1,16 @@
-import React from "react";
+import React, { Component } from 'react';
 import "./App.css";
 import BasicKeys from './components/BasicKeys';
 import BasicTones from './components/Home';
 import CreateSong from './components/CreateSong';
 import Sandbox from './components/Sandbox';
+import PianoRoll from './components/PianoRoll';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+
 } from "react-router-dom";
 
 
@@ -32,6 +34,9 @@ export default function App() {
               <li>
                 <div className="menu-link"><Link to="/sandbox">Code Sandbox</Link></div>
               </li>
+              <li>
+                <div className="menu-link"><Link to="/pianoroll" onClick={() => window.location.href="/pianoroll"}>Piano Roll</Link></div>
+              </li>
             </ul>
         </nav>
 
@@ -54,6 +59,11 @@ export default function App() {
           <Route path="/sandbox">
             <div className="main-container">
               <Sandbox />
+            </div>
+          </Route>
+          <Route path="/pianoroll">
+            <div className="main-container">
+              <PianoRoll />
             </div>
           </Route>
         </Switch>
