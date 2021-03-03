@@ -29,9 +29,6 @@ export default function App() {
                 <div className="menu-link"><Link to="/module2">Module 2: Mapping to Buttons</Link></div>
               </li>
               <li>
-                <div className="menu-link"><Link to="/module3">Module 3: Creating Songs</Link></div>
-              </li>
-              <li>
                 <div className="menu-link"><Link to="/sandbox">Code Sandbox</Link></div>
               </li>
               <li>
@@ -49,11 +46,6 @@ export default function App() {
           <Route path="/module2">
             <div className="main-container">
               <BasicKeys />
-            </div>
-          </Route>
-          <Route path="/module3">
-            <div className="main-container">
-              <CreateSong />
             </div>
           </Route>
           <Route path="/sandbox">

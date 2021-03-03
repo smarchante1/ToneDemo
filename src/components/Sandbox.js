@@ -1,11 +1,9 @@
 import "./BasicKeys.css"
-import React, { useState } from 'react';
+import React from 'react';
 import * as Tone from "tone";
 
 
 const Sandbox = () => {
-    const [play, setPlay] = useState(false)
-    const [disabled, setDisabled] = useState(true)
 
     // :::::::::::::::::::::::::::::::::::::::
     // :::::: SINGLE + MULTIPLE BUTTONS ::::::
