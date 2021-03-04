@@ -156,3 +156,9 @@ input {
     height: 50%;
     outline: none;
 }
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    margin: auto;
+}

@@ -24,11 +24,12 @@ const Sandbox = () => {
     // ::::::::::::::::::::::::::::
 
     // const notes = ['Eb4','G4','F4','Ab4']
+
     // const sequence1 = new Tone.Sequence(function(time, note) {
     //     synth.triggerAttackRelease(note, 0.5);
     // }, notes, '4n');
 
-    // Tone.Transport.bpm.value = 80; //how many beats(quarter notes) per minute
+    // Tone.Transport.bpm.value = 100; //how many beats(quarter notes) per minute
     // Tone.Transport.start();
     
     // function mouseClick() {
@@ -59,7 +60,7 @@ const Sandbox = () => {
                 <div className="generic-button-container">
                   <h2>Single Button:</h2>
                   <p>Try Passing in These Notes: C,D,E,F,G,A,B</p>
-                  {/* <button className="generic-button" onClick={() => playNote("A")}>A</button> */}
+                  {/* <button className="generic-button" onClick={() => playNote("C")}>A</button> */}
 
                 </div>
             </div>
@@ -89,7 +90,6 @@ const Sandbox = () => {
               <span>A</span>
             </button> */}
 
-
         </div>
 
         <br />
@@ -103,8 +103,8 @@ const Sandbox = () => {
         </div>
         
         <div className="note-wrapper">
-        {/* <button className="generic-button" onClick={mouseClick}>Play</button>
-            <button className="generic-button" onClick={stop}>Stop</button> */}
+            {/* <button className="generic-button" onClick={mouseClick}>Play</button> */}
+            {/* <button className="generic-button" onClick={stop}>Stop</button> */}
         </div>
 
       </div>
