@@ -103,8 +103,8 @@ const Sandbox = () => {
         </div>
         
         <div className="note-wrapper">
-            {/* <button className="generic-button" onClick={mouseClick}>Play</button> */}
-            {/* <button className="generic-button" onClick={stop}>Stop</button> */}
+            {/* <button className="generic-button" onClick={mouseClick}>Play</button> 
+            <button className="generic-button" onClick={stop}>Stop</button> */}
         </div>
 
       </div>
