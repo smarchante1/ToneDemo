@@ -29,7 +29,7 @@ const Sandbox = () => {
     //     synth.triggerAttackRelease(note, 0.5);
     // }, notes, '4n');
 
-    // Tone.Transport.bpm.value = 100; //how many beats(quarter notes) per minute
+    // Tone.Transport.bpm.value = 80; //how many beats(quarter notes) per minute
     // Tone.Transport.start();
     
     // function mouseClick() {
@@ -60,7 +60,7 @@ const Sandbox = () => {
                 <div className="generic-button-container">
                   <h2>Single Button:</h2>
                   <p>Try Passing in These Notes: C,D,E,F,G,A,B</p>
-                  {/* <button className="generic-button" onClick={() => playNote("C")}>A</button> */}
+                  {/* <button className="generic-button" onClick={() => playNote("D")}>A</button> */}
 
                 </div>
             </div>

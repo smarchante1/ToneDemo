@@ -1,3 +1,8 @@
+body,
+html {
+  font-family: "Roboto", sans-serif;
+}
+
 nav {
   width : 250px; 
   background: #e3dffc;
